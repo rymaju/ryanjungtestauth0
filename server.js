@@ -29,6 +29,15 @@ const checkJwt = jwt({
 
 app.use(express.static(path.join(__dirname, '/build')))
 
+/*
+TODO:
+- Install helmet, rate-limit etc for extra protection
+- add morgan for logging
+- mongoose and other connections to mongoDB
+- add CRUD for a basic tiem
+- add snippets of fun
+*/
+
 // Define an endpoint that must be called with an access token
 app.get('/api/external', checkJwt, (req, res) => {
   res.send({
