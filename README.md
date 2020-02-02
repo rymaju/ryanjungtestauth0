@@ -1,10 +1,8 @@
-# Sample 01 - Logging In and Gated Content
+# Sample Auth0 MERN Web App
 
-This sample demonstrates:
+Basic MERN app with Auth0 template. Majority was blantantly taken from the Auth0 SPA React Setup, but has been since heavily modified to fit the MERN architecture.
 
-- Logging in to Auth0 using Redirect Mode
-- Accessing profile information that has been provided in the ID token
-- Gated content. The `/profile` route is not accessible without having first logged in
+Backend and frontend exist in the same directory and share the sane `package.json` file, but they can be decoupled if needed. The react app is statically served from the express app.
 
 ## Project setup
 

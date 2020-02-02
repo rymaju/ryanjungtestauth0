@@ -36,5 +36,9 @@ app.get('/api/external', checkJwt, (req, res) => {
   })
 })
 
+app.get('*', function (req, res) {
+  res.redirect('/')
+})
+
 // Start the app
 app.listen(process.env.PORT || 3000, () => console.log('API listening on 3000'))
