@@ -6,33 +6,32 @@ Backend and frontend exist in the same directory and share the sane `package.jso
 
 ## Project setup
 
-Use `yarn` or `npm` to install the project dependencies:
+Use `npm` to install the project dependencies:
 
 ```bash
-# Using npm..
 npm install
-
-# Using yarn..
-yarn install
 ```
 
 ### Configuration
 
 The project needs to be configured with your Auth0 domain and client ID in order for the authentication flow to work.
 
+Also you must include the API identifier for the backend.
+
 To do this, first copy `src/auth_config.json.example` into a new file in the same folder called `src/auth_config.json`, and replace the values with your own Auth0 application credentials:
 
 ```json
 {
   "domain": "{YOUR AUTH0 DOMAIN}",
-  "clientId": "{YOUR AUTH0 CLIENT ID}"
+  "clientId": "{YOUR AUTH0 CLIENT ID}",
+  "audience": "{YOUR AUTH0 API AUDIENCE}"
 }
 ```
 
 ### Compiles and hot-reloads for development
 
 ```bash
-npm run start
+npm run dev
 ```
 
 ## Deployment
@@ -52,10 +51,6 @@ To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
 ```bash
 npm run test
 ```
-
-## Frequently Asked Questions
-
-We are compiling a list of questions and answers regarding the new JavaScript SDK - if you're having issues running the sample applications, [check the FAQ](https://github.com/auth0/auth0-spa-js/blob/master/FAQ.md)!
 
 # What is Auth0?
 
