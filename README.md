@@ -42,16 +42,6 @@ npm run dev
 npm run build
 ```
 
-### Docker build
-
-To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
-
-### Run your tests
-
-```bash
-npm run test
-```
-
 # What is Auth0?
 
 Auth0 helps you to:
